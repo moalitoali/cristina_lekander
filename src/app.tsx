@@ -1,5 +1,5 @@
 import "./styles.css";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import { Home } from "./pages/Home";
 import { Gallery } from "./pages/Gallery";
 import { Header } from "./components/Header";
@@ -48,9 +48,9 @@ function AppContent() {
 
 export function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <AppContent />
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
