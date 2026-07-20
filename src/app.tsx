@@ -48,7 +48,7 @@ function AppContent() {
 
 export function App() {
   return (
-    <HashRouter basename={import.meta.env.BASE_URL}>
+    <HashRouter>
       <AppContent />
     </HashRouter>
   );
