@@ -1,6 +1,7 @@
 import { css } from "@emotion/css";
 import { useEffect, useState } from "react";
 import { useContentful } from "../hooks/useContentful";
+import { HashLink } from "react-router-hash-link";
 
 type Props = {
   language: "en-US" | "sv";
@@ -43,9 +44,9 @@ export function Hero({ language }: Props) {
           <br />
           <span className={style.titleItalic}>{hero.bottomHeading}</span>
         </h1>
-        <a href="#contact" className={style.discoverLink}>
+        <HashLink to="#contact" className={style.discoverLink}>
           {hero.linkText} <span className={style.arrow}>→</span>
-        </a>
+        </HashLink>
       </div>
     </section>
   );
