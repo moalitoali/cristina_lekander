@@ -1,4 +1,6 @@
 import { css } from "@emotion/css";
+import emailIcon from "../../images/icons/email.svg";
+import instagramIcon from "../../images/icons/instagram.svg";
 
 type Props = {
   title: string;
@@ -13,11 +15,7 @@ export function ContactCard({ title, email, instagram }: Props) {
       <div className={style.infoContainer}>
         <div className={style.item}>
           <a href={`mailto:${email}`} className={style.link}>
-            <img
-              src="../../images/icons/email.svg"
-              alt="email"
-              className={style.icon}
-            />
+            <img src={emailIcon} alt="email" className={style.icon} />
             {email}
           </a>
         </div>
@@ -28,11 +26,7 @@ export function ContactCard({ title, email, instagram }: Props) {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
-              src="../../images/icons/instagram.svg"
-              alt="instagram"
-              className={style.icon}
-            />
+            <img src={instagramIcon} alt="instagram" className={style.icon} />
             {instagram.username}
           </a>
         </div>

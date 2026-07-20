@@ -1,5 +1,6 @@
 import { css } from "@emotion/css";
 import type { ComponentChildren } from "preact";
+import backgroundImage from "../../images/background.png";
 
 type LayoutProps = {
   children: ComponentChildren;
@@ -30,7 +31,7 @@ const bgStyle = css({
   right: 0,
   bottom: 0,
   backgroundColor: "#000",
-  backgroundImage: `linear-gradient(to top, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.85) 100%), url('../../images/background.png')`,
+  backgroundImage: `linear-gradient(to top, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.85) 100%), url('${backgroundImage}')`,
   backgroundRepeat: "no-repeat",
   backgroundPosition: "center",
   backgroundSize: "cover",
