@@ -1,11 +1,7 @@
 import { css } from "@emotion/css";
 
 export function Footer() {
-  return (
-    <footer role={"navigation"} className={style.container}>
-      Copyright 2026
-    </footer>
-  );
+  return <footer className={style.container}>Copyright 2026</footer>;
 }
 
 const style = {
