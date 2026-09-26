@@ -44,7 +44,7 @@ export function Hero({ language }: Props) {
           <br />
           <span className={style.titleItalic}>{hero.bottomHeading}</span>
         </h1>
-        <HashLink to="#contact" className={style.discoverLink}>
+        <HashLink to="/gallery" className={style.discoverLink}>
           {hero.linkText} <span className={style.arrow}>→</span>
         </HashLink>
       </div>
